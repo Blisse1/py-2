@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <section>
+            <span style="font-size:2rem;color:blueviolet;">Celsius a Kelvin</span>
+            <form action="{{url_for('celsius')}}" method="POST">
+                Introduzca temperatura en Celsius: <input type="number" id="celsius" name="celsius">
+                <p>Su temperatura en Kelvin es: {{celsiusKelvin}} </p>
+                <button type="submit">Calcular</button>
+            </form> 
+        </section>
+        <section>
+            <span style="font-size:2rem;color:blueviolet;">Kelvin a Fahrenheit</span>
+            <form action="{{url_for('kelvin')}}" method="POST">
+                Introduzca temperatura en Kelvin: <input type="number" id="kelvin" name="kelvin">
+                <p>Su temperatura en Fahrenheit es: {{kelvin}} </p>
+                <button type="submit">Calcular</button>
+            </form> 
+        </section>
+        <section>
+            <span style="font-size:2rem;color:blueviolet;">Fahrenheit a Celsius</span>
+            <form action="{{url_for('fahrenheitCelsius')}}" method="POST">
+                Introduzca temperatura en Fahrenheit: <input type="number" id="fahrenheitCelsius" name="fahrenheitCelsius">
+                <p>Su temperatura en Celsius es: {{fahrenheitCelsius}} </p>
+                <button type="submit">Calcular</button>
+            </form> 
+        </section>
+        <section>
+            <span style="font-size:2rem;color:blueviolet;">Fahrenheit a Kelvin</span>
+            <form action="{{url_for('fahrenheitKelvin')}}" method="POST">
+                Introduzca temperatura en kelvin: <input type="number" id="fahrenheitKelvin" name="fahrenheitKelvin">
+                <p>Su temperatura en Kelvin es: {{fahrenheitKelvin}} </p>
+                <button type="submit">Calcular</button>
+            </form> 
+        </section>
+    </body>
+</html>
